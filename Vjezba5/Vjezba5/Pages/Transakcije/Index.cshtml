@@ -1,0 +1,43 @@
+﻿@page
+@model Vjezba5.Pages.Transakcije.IndexModel
+@{
+}
+
+<br>
+<h2>Transakcije</h2>
+<a class='btn btn-primary btn-sm' href='/Transakcije/Create'>Dodaj Transakciju</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Platitelj</th>
+            <th>Primatelj</th>
+            <th>Iban</th>
+            <th>Model</th>
+            <th>Iznos</th>
+            <th>Valuta</th>
+            <th>Vrijeme Uplate</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model.listTransakcije)
+        {
+            <tr>
+                <td>@item.id </td>
+                <td>@item.platitelj</td>
+                <td>@item.primatelj</td>
+                <td>@item.iban</td>
+                <td>@item.model</td>
+                <td>@item.iznos</td>
+                <td>@item.valuta</td>
+                <td>@item.vrijemeUplate</td>
+ 
+                <td>
+                    <a class="btn btn-primary btn-sm" href="/Transakcije/Edit?id=@item.id">Edit</a> 
+                    <a class="btn btn-danger btn-sm" href="/Transakcije/Delete?id=@item.id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

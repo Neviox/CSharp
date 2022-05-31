@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32519.379
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vjezba1", "Vjezba1\Vjezba1.csproj", "{4AEBD5C9-6B9E-4A48-AE97-7DEF4BB4F4CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vjezba1-Bank", "Vjezba1-Bank\Vjezba1-Bank.csproj", "{98EF5489-5E79-474A-A84B-997A65427903}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4AEBD5C9-6B9E-4A48-AE97-7DEF4BB4F4CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AEBD5C9-6B9E-4A48-AE97-7DEF4BB4F4CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AEBD5C9-6B9E-4A48-AE97-7DEF4BB4F4CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AEBD5C9-6B9E-4A48-AE97-7DEF4BB4F4CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98EF5489-5E79-474A-A84B-997A65427903}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98EF5489-5E79-474A-A84B-997A65427903}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98EF5489-5E79-474A-A84B-997A65427903}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98EF5489-5E79-474A-A84B-997A65427903}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7D733342-6683-444B-9A47-6C1A42221247}
+	EndGlobalSection
+EndGlobal

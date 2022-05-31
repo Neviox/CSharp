@@ -1,0 +1,73 @@
+﻿@page
+@model Vjezba5.Pages.Transakcije.CreateModel
+@{
+}
+
+<br>
+<h2>Nova Transakcija</h2>
+
+@if (Model.errorMessage.Length > 0) {
+    <div class='alert alert-warning alert-dismissible fade show' role='alert'>
+      <strong>@Model.errorMessage</strong>
+      <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+    </div>
+}
+
+<form method="POST">
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Platitelj</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" name="platitelj" value="@Model.transakcijeInfo.platitelj">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Primatelj</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" name="primatelj" value="@Model.transakcijeInfo.primatelj">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Iban</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" name="iban" value="@Model.transakcijeInfo.iban">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Model</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" name="model" value="@Model.transakcijeInfo.model">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Iznos</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" name="iznos" value="@Model.transakcijeInfo.iznos">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Valuta</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" name="valuta" value="@Model.transakcijeInfo.valuta">
+        </div>
+    </div>
+  
+    @if (Model.successMessage.Length > 0) {
+    <div class="row mb-3">
+        <div class="col-sm-9">
+            <div class='alert alert-success alert-dismissible fade show' role='alert'>
+              <strong>@Model.successMessage</strong>
+              <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+            </div>
+        </div>
+    </div>
+    }
+
+    <div class="row mb-3">
+        <div class="offset-sm-3 col-sm-3 d-grid">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+        <div class="col-sm-3 d-grid">
+          <a class="btn btn-outline-primary" href="/" role="button">Cancel</a>
+        </div>
+    </div>
+</form>
